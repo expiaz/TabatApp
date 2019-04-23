@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <!-- TODO size 50% screen & counter in square -->
+    <com.db.circularcounter.CircularCounter
+        xmlns:meter="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/counter"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:padding="5dp"
+        meter:range="100"
+        meter:textSize="100sp"
+        meter:textColor="#ffffff"
+        meter:metricSize="20sp"
+        />
+
+</RelativeLayout>

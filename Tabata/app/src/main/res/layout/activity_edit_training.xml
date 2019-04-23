@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.9"
+            android:orientation="vertical"
+            android:padding="15sp">
+
+            <EditText
+                android:id="@+id/training.edit.name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit.training.name"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:paddingTop="20sp"
+                android:paddingBottom="20sp"
+                android:layout_marginBottom="30sp"/>
+
+            <LinearLayout
+                android:id="@+id/training.edit.prepare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:text="@string/edit.training.prepare"
+                    android:gravity="right"
+                    android:layout_marginRight="20sp"/>
+
+                <TextView
+                    android:id="@+id/training.edit.prepare.time"
+                    android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:text="@string/training.edit.default.time"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/training.edit.work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:text="@string/edit.training.work"
+                    android:gravity="right"
+                    android:layout_marginRight="20sp"/>
+
+                <TextView
+                    android:id="@+id/training.edit.work.time"
+                    android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:text="@string/training.edit.default.time"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/training.edit.rest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:text="@string/edit.training.rest"
+                    android:gravity="right"
+                    android:layout_marginRight="20sp"/>
+
+                <TextView
+                    android:id="@+id/training.edit.rest.time"
+                    android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:text="@string/training.edit.default.time"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/training.edit.cycles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:text="@string/edit.training.cycles"
+                    android:gravity="right"
+                    android:layout_marginRight="20sp"/>
+
+                <TextView
+                    android:id="@+id/training.edit.cycles.time"
+                    android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:text="@string/training.edit.default.time"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/training.edit.tabatas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:text="@string/edit.training.tabatas"
+                    android:gravity="right"
+                    android:layout_marginRight="20sp"/>
+
+                <TextView
+                    android:id="@+id/training.edit.tabatas.time"
+                    android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:text="@string/training.edit.default.time"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit.training.total_time"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="50sp"/>
+
+            <TextView
+                android:id="@+id/training.edit.time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/training.edit.default.time"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                android:gravity="center"
+                android:layout_marginTop="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.1"
+            android:layout_gravity="bottom">
+
+            <ImageButton
+                android:id="@+id/training.edit.button.plus"
+                android:layout_width="0sp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:background="@drawable/square_button"
+                android:src="@drawable/plus"/>
+
+            <ImageButton
+                android:id="@+id/training.edit.button.less"
+                android:layout_width="0sp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:background="@drawable/square_button"
+                android:src="@drawable/minus"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

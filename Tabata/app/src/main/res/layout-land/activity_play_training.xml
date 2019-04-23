@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- COUNTER -->
+    <LinearLayout
+        android:id="@+id/container.timer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <!-- INFOS -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="30sp">
+
+        <!-- LEGEND -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text.size.h4"
+                android:gravity="center_horizontal"
+                android:text="@string/play.legend.click"/>
+
+            <!-- TOTAL / TABATA container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp"
+                android:baselineAligned="false">
+                <!-- TOTAL -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="5sp">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:background="@color/counter.width.total"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_horizontal"
+                        android:textStyle="italic|bold"
+                        android:text="@string/play.legend.total"/>
+                </LinearLayout>
+                <!-- TABATA -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5sp">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:background="@color/counter.width.tabata"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_horizontal"
+                        android:textStyle="italic|bold"
+                        android:text="@string/play.legend.tabata"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- WORK / REST container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10sp">
+                <!-- WORK -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="5sp">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:background="@color/counter.width.part.work"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_horizontal"
+                        android:textStyle="italic|bold"
+                        android:text="@string/play.legend.work"/>
+                </LinearLayout>
+                <!-- REST -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5sp">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:background="@color/counter.width.part.rest"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_horizontal"
+                        android:textStyle="italic|bold"
+                        android:text="@string/play.legend.rest"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- PARTS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20sp">
+
+            <!-- CURRENT -->
+            <LinearLayout
+                android:id="@+id/play.parts.current"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:background="@drawable/layout_rest"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:id="@+id/play.parts.current.name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/text.size.h4"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/counter.width.part.rest"
+                    />
+                <TextView
+                    android:id="@+id/play.parts.current.time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textSize="@dimen/text.size.h4"
+                    android:textColor="@color/counter.width.part.rest"
+                    />
+
+            </LinearLayout>
+
+            <!-- NEXT -->
+            <LinearLayout
+                android:id="@+id/play.parts.next"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:background="@drawable/layout_work"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp">
+
+                <TextView
+                    android:id="@+id/play.parts.next.name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textColor="@color/counter.width.part.work"
+                    android:textSize="@dimen/text.size.h4"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/play.parts.next.time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textColor="@color/counter.width.part.work"
+                    android:textSize="@dimen/text.size.h4"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- PICTOS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20sp">
+            <!-- temps total -->
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/training.picto.total_time"
+                    android:src="@drawable/timer"
+                    android:layout_marginRight="10sp"/>
+                <TextView
+                    android:id="@+id/play.time.left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text.size.big"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <!-- nombre de reps -->
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/training.picto.cycles"
+                    android:src="@drawable/reload"
+                    android:layout_marginRight="10sp"/>
+                <TextView
+                    android:id="@+id/play.parts.left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text.size.big"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

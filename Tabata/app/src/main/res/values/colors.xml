@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#E84A5F</color>
+
+
+    <color name="counter.background">#2A363B</color>
+    <color name="counter.width.part.work">#E84A5F</color>
+    <color name="counter.width.part.work.ligthen">#e88c99</color>
+    <color name="counter.width.part.rest">#448aff</color>
+    <color name="counter.width.part.rest.ligthen">#89aeeb</color>
+    <color name="counter.width.tabata">#FF847B</color>
+    <color name="counter.width.total">#FECEA8</color>
+
+    <color name="counter.timer">#ffffff</color>
+    <color name="counter.partname">#ffffff</color>
+</resources>
